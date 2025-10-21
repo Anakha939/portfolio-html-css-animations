@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+nav{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display:flex;
+    gap: 45px;
+    margin-right: 20px;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+nav a:hover{
+    color: rgb(175, 175, 35);
+    text-decoration: underline;
+}
+
+#home{
+    margin-left: 100px;
+    margin-top: 200px;
+    position: relative;
+}
+
+.home-contents{
+    width: 45%;
+}
+
+.home-contents h1{
+    font-family:  "Playwrite DE SAS", cursive;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.home-contents p{
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.home-contents a{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.home-images{
+    width:60% ;
+    position: absolute;
+    height: 75vh;
+    right: 0;
+    top: -200px;
+}
+.groupImg{
+    position: absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    transition: left 5s, top 3s;
+}
+.home-images:hover #shapeImg{
+    top:-200px;
+}
+
+.home-images:hover #girl{
+    left:100px;
+}
+#about{
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.main-head{
+    text-align: center;
+}
+.sub-head{
+    text-align: center;
+    color: green;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    align-items: center;
+}
+.about-image img{
+    width: 75%;
+}
+.about-contents p{
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    font-size: large;
+}
+.about-contents ul{
+    list-style: none;
+    margin-top: 10px;
+
+}
+.about-contents li{
+    font-weight: bold;
+    margin-top: 7px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    align-items: center;
+    
+}
+.skills-image img{
+    width: 75%;
+}
+.html-chart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.base-bar{
+    background-color: black;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.html-bar{
+    background-color:orange;
+    width: 89%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+#skills{
+    margin-left: 100px;
+}
+.css-chart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:45px;
+}
+.css-bar-{
+    background-color: black;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.css-bar{
+    background-color:orange;
+    width: 80%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.js-chart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:90px;
+}
+.js-bar-{
+    background-color: black;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.js-bar{
+    background-color:orange;
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.react-chart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:135px;
+}
+.react-bar-{
+    background-color: black;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+}
+.react-bar{
+    background-color:orange;
+    width: 65%;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top:35px;
+    animation: react 5s;
+}
+@keyframes react{
+    from{background-color: orange;width: 0%;}
+    to{
+        background-color: orange;width: 65%;
+    }
+}
+.parent-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.icon-container{
+    padding: 15px;
+}
+.icon-container a{
+    font-size: 40px;
+    color: black;
+}
+.icon-container:hover{
+    background-image: linear-gradient(to bottom, pink,red,yellow,green);
+    border-radius: 45%;
+    animation: myAnimation 4s;
+}
+.icon-container:hover a{
+    color:white;
+}
+@keyframes myAnimation{
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(135deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}   
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: orange;
+}
+::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+}
